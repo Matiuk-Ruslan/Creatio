@@ -1,0 +1,23 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "ColumnName": "Id",
+          "Value": "2caa2d49-7b0a-48c1-8f5b-f2b17a9340bf"
+        },
+        {
+          "SchemaColumnUId": "55132174-2b96-4e0a-830c-b8e952b12c45",
+          "ColumnName": "PageCaption",
+          "Value": "Страница редактирования: \"Недвижимость\""
+        },
+        {
+          "SchemaColumnUId": "a19bf4bf-e22b-49b5-b6e0-918ff6290020",
+          "ColumnName": "ActionKindCaption",
+          "Value": ""
+        }
+      ]
+    }
+  ]
+}

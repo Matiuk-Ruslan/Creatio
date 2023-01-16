@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Недвижимость" />
+			<Item Name="Columns.UsrArea.Caption" Value="Площадь" />
+			<Item Name="Columns.UsrName.Caption" Value="Название" />
+			<Item Name="Columns.UsrNotes.Caption" Value="Комментарий" />
+			<Item Name="Columns.UsrOfferTypeRealty.Caption" Value="Тип предложения" />
+			<Item Name="Columns.UsrPrice.Caption" Value="Цена" />
+			<Item Name="Columns.UsrRealtyType.Caption" Value="Тип" />
+			<Item Name="EventsProcessSchema.Caption" Value="Бизнес-процесс" />
+		</Items>
+	</Group>
+</Resources>

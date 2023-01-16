@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Страница редактирования: &quot;Недвижимость&quot;" />
+			<Item Name="LocalizableStrings.CommissionCaption.Value" Value="Коммисия" />
+			<Item Name="LocalizableStrings.CommissionHelp.Value" Value="USD" />
+			<Item Name="LocalizableStrings.TabBasicInformationTabCaption.Value" Value="Основная информация" />
+			<Item Name="LocalizableStrings.UsrAreaHelp.Value" Value="м²" />
+			<Item Name="LocalizableStrings.UsrPriceHelp.Value" Value="USD" />
+			<Item Name="LocalizableStrings.UsrRealtyViewDetailDetailCaptionOnPage.Value" Value="Просмотры недвижимости" />
+			<Item Name="LocalizableStrings.WarningMessageValidator.Value" Value="Значение не может быть отрицательным" />
+		</Items>
+	</Group>
+</Resources>

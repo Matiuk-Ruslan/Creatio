@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Просмотры недвижимости" />
+			<Item Name="Columns.UsrComment.Caption" Value="Комментарий" />
+			<Item Name="Columns.UsrPotentialClient.Caption" Value="Потенциальный клиент" />
+			<Item Name="Columns.UsrRealty.Caption" Value="Недвижимость" />
+			<Item Name="Columns.UsrResponsible.Caption" Value="Ответственный" />
+			<Item Name="EventsProcessSchema.Caption" Value="Просмотры недвижимости" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet_e8b9e014c053426b998e52a9b0587066.Caption" Value="LaneSet 1" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet_e8b9e014c053426b998e52a9b0587066.Lanes.Lane_106dcc20a0874861ba27add3ad96295f.Caption" Value="Lane 1" />
+			<Item Name="EventsProcessSchema.Parameters.DcmEntityUtil.Caption" Value="DcmEntityUtil" />
+			<Item Name="EventsProcessSchema.Parameters.ProcessSchemaListeners.Caption" Value="ProcessSchemaListeners" />
+		</Items>
+	</Group>
+</Resources>

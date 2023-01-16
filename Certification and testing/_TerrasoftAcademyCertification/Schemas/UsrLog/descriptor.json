@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "969dbde6-976f-4560-a926-43abcfcca8a6",
+    "Name": "UsrLog",
+    "ModifiedOnUtc": "\/Date(1653579627000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Log"
+  }
+}

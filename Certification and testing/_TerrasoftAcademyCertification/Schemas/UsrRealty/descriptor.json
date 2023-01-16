@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "3ee8132d-f4d4-4ca5-b56e-52c0fabbd64b",
+    "Name": "UsrRealty",
+    "ModifiedOnUtc": "\/Date(1653578545000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Недвижимость"
+  }
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "6d084697-1c7b-4ad0-808d-4442e923595d",
+    "Name": "UsrOfferTypeRealty",
+    "ModifiedOnUtc": "\/Date(1653572883000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Тип предложения недвижимости"
+  }
+}

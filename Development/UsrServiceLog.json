@@ -1,0 +1,170 @@
+{
+    "result_id": 0,
+    "name": "Олексій",
+    "email": "corvas513@gmail.com",
+    "phone": "380505246270",
+    "city": "Кропивницький",
+    "address": null,
+    "type": "Пропозиція",
+    "message": "прошу змінити мій номер телефону за акаунтом Стожок Олексій Андрійович 0505246270 на 0997019474 або надати інструкції як це зробити",
+    "cardnum": null,
+    "origin": "mobile_app_android",
+    "file": []
+}
+
+{
+    "number": 380635891516,
+    "sent_via": "viber",
+    "message_id": "3d00066d-3658-11ec-b3a6-000c29cec73c",
+    "time": 1635251382000,
+    "status": 2,
+    "substatus": 23,
+    "hyber_status": 23043,
+    "extra_id": "f03b37f8-3660-4f07-a9a1-b0d393ddfa6a"
+}
+
+{
+    "phone_number": "380509401528",
+    "extra_id": "884f22a2-d071-4704-83a3-f83d4b5368c6",
+    "callback_url": "https://eva.bpmonline.com/0/ServiceModel/UsrBPMService.svc/SMSCallBack",
+    "start_time": "2021-11-16 15:00:33",
+    "tag": "Обращение",
+    "is_promotional": false,
+    "channels": [
+        "viber",
+        "sms"
+    ],
+    "channel_options": {
+        "sms": {
+            "text": "Вітаємо! По зверненню №SR01953370 була отримана нова інформація. Для отримання деталей затефонуйте на 0800303700. Гарного дня!",
+            "alpha_name": "EVA",
+            "ttl": 1800
+        },
+        "viber": {
+            "text": "Вітаємо! По зверненню №SR01953370 була отримана нова інформація. Для отримання деталей затефонуйте на 0800303700. Гарного дня!",
+            "ttl": 1800
+        }
+    }
+}
+
+
+
+SELECT TOP 100(UsrRequestBody) FROM usrservicelog WITH(NOLOCK)
+WHERE UsrRequestBody NOT LIKE '%При создании ActivityId%'
+//AND UsrRequestBody NOT LIKE '%Authorization%'
+//AND UsrRequestBody NOT LIKE '%CardTypeInfo%'
+//AND UsrRequestBody NOT LIKE '%GetInfo%'
+//AND UsrRequestBody NOT LIKE '%GetCardInfo%'
+//AND UsrRequestBody NOT LIKE '%GetTransactions%'
+//AND UsrRequestBody NOT LIKE '%CabinetInfoCount%'
+//AND UsrRequestBody NOT LIKE '%GetCabinetInfo%'
+//AND UsrRequestBody NOT LIKE '%SaveContact%'
+//AND UsrRequestBody NOT LIKE '%Search%'
+AND UsrRequestBody NOT LIKE '%До обновления ActivityId%'
+AND UsrRequestBody NOT LIKE '%CheckLang%'
+AND UsrRequestBody NOT LIKE '%ProcessCustomerV2%'
+AND UsrRequestBody NOT LIKE '%CallBackEmail service%'
+AND UsrRequestBody NOT LIKE '%NewOrder Service%'
+AND UsrRequestBody NOT LIKE '%CreateActivity DELETE Service%'
+AND UsrRequestBody NOT LIKE '%OrderUpdate%'
+AND UsrRequestBody NOT LIKE '%NewOrder UsrEvaBPMService Service%'
+AND UsrRequestBody NOT LIKE '%CreateActivity GetWebitelId Service%'
+AND UsrRequestBody NOT LIKE '%После обновления ActivityId%'
+AND UsrRequestBody NOT LIKE '%CardTypeId%'
+AND UsrRequestBody NOT LIKE '%RegisterCaseRequest%'
+AND UsrRequestBody NOT LIKE '%ServiceDesk: GetCase_POST. Method: GetCase(). #region: XML_request%'
+AND UsrRequestBody NOT LIKE '%ServiceDesk: GetCase_POST. Method: RegisterCase(). #region: TrySerialiseXml Tonality%'
+AND UsrRequestBody NOT LIKE '%CreateContactForActivity%'
+AND UsrRequestBody NOT LIKE '%CreateContactForRegisterCallBack%'
+AND UsrRequestBody NOT LIKE '%ServiceDesk: GetCase_POST. SUCCESS%'
+AND UsrRequestBody NOT LIKE '%ServiceDesk: SendCase_POST. SUCCESS RESPONSE%'
+AND UsrRequestBody NOT LIKE '%UsrNPSService%'
+AND UsrRequestBody NOT LIKE '%http: //195.24.136.70:8080/sdpapi/request/%'
+AND UsrRequestBody NOT LIKE '%UpdateContact error%'
+AND UsrRequestBody NOT LIKE '%CreateContact%'
+AND UsrRequestBody NOT LIKE '%UsrAccessRightsForNPSActivity%'
+AND UsrRequestBody NOT LIKE '%number%'
+AND UsrRequestBody NOT LIKE '%phone_numer%'
+AND UsrRequestBody NOT LIKE '%result_id%'
+AND UsrRequestBody NOT LIKE '%CreateCity%'
+AND UsrRequestBody NOT LIKE '%CallBackEmail error: Account with such code was not found%'
+AND UsrRequestBody NOT LIKE '%ServiceDesk: GetCase_POST. Method: RegisterCase(). #region: Update%'
+
+
+
+
+
+
+
+
+
+--WHERE UsrRequestTime BETWEEN '2021-11-23 00: 00: 00' AND '2021-11-23 23: 59: 59'
+--and usrrequestbody like '%ServiceDesk%' or usrerrors like '%ServiceDesk%'
+
+
+
+
+
+
+Tonality from SD: Нейтральная; TonalityId: bde3af50-cbb9-4067-8e34-7352e91f7aa4
+
+//23.11.2021 12:47:00	
+XML REQUEST: {
+    "ApiKey": "1111",
+    "WorkorderId": "1311898",
+    "Title": "SR01976221/Ассортимент товаров/Отсутствие товара",
+    "Category": "Ассортимент товаров",
+    "DateResolve": "1637761560 ",
+    "State": "Открыт ",
+    "Specialist": "Менеджер СЕМ ",
+    "Answer": "",
+    "Tonality": "",
+    "Decision": "",
+    "Rudeness": "0",
+    "Deptname": null,
+    "GroupName": "Маркетинг ",
+    "Platform": "Центральный офис ",
+    "Description": "Категория: Горячая линия/Ассортимент товаров/Отсутствие товара Дата и время: Nov 23, 2021 12:43 PM Статус обращения : Ожидает ответа Оператор: Системный аналитик Клиент: Тестовая Учетная Запись [1] Контакт: 380000001111 ; test.developer.mg@gmail.com Город: Без города Карта ПЛ: Происхождение: Звонок Ссылка на упоминание: Содержание:  Тестовое сообщение Контрагент: Филиал: ...",
+    "Service": "Отсутствие товара",
+    "Contractor": "Контакт-центр",
+    "PhoneClient": null,
+    "Requester": null,
+    "DateCreate": null
+}	
+
+ServiceDesk: GetCase_POST. SUCCESS	
+
+{//Отправка смс
+    "phone_number": "380000001111",
+    "extra_id": "da52b838-40f9-4b26-aa7b-214b8919f044",
+    "callback_url": "https://eva.bpmonline.com/0/ServiceModel/UsrBPMService.svc/SMSCallBack",
+    "start_time": "2021-11-23 13:24:35",
+    "tag": "Обращение",
+    "is_promotional": false,
+    "channels": [
+        "viber",
+        "sms"
+    ],
+    "channel_options": {
+        "sms": {
+            "text": "Вітаємо! По зверненню №SR01976221 була отримана нова інформація. Для отримання деталей затефонуйте на 0800303700. Гарного дня!",
+            "alpha_name": "EVA",
+            "ttl": 1800
+        },
+        "viber": {
+            "text": "Вітаємо! По зверненню №SR01976221 була отримана нова інформація. Для отримання деталей затефонуйте на 0800303700. Гарного дня!",
+            "ttl": 1800
+        }
+    }
+}
+
+{//Ответ от провайдера смс
+    "number": 380000001111,
+    "sent_via": "sms",
+    "message_id": "cbffe7b0-4c4f-11ec-a0de-000c29cec73c",
+    "time": 1637666675000,
+    "status": 3,
+    "substatus": 36,
+    "hyber_status": 36051,
+    "extra_id": "da52b838-40f9-4b26-aa7b-214b8919f044"
+}

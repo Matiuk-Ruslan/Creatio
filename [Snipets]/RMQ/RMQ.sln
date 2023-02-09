@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMQ", "RMQ.csproj", "{923067D7-8629-4987-A99E-F30F10AA297E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMQ.Api", "RMQ.Api\RMQ.Api.csproj", "{643EB744-16BA-4CE7-85BB-32E882B9D5A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{923067D7-8629-4987-A99E-F30F10AA297E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{923067D7-8629-4987-A99E-F30F10AA297E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{923067D7-8629-4987-A99E-F30F10AA297E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{923067D7-8629-4987-A99E-F30F10AA297E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{643EB744-16BA-4CE7-85BB-32E882B9D5A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{643EB744-16BA-4CE7-85BB-32E882B9D5A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{643EB744-16BA-4CE7-85BB-32E882B9D5A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{643EB744-16BA-4CE7-85BB-32E882B9D5A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE1EB1C8-24E4-4B47-8AC4-AB1760526383}
+	EndGlobalSection
+EndGlobal

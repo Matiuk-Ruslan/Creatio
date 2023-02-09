@@ -1,0 +1,9 @@
+﻿{
+  "Descriptor": {
+    "UId": "132380a4-3e4f-4339-954a-e2001ba0f03f",
+    "Name": "UsrStartupEventListener",
+    "ModifiedOnUtc": "\/Date(1675765133000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "StartupEventListener"
+  }
+}

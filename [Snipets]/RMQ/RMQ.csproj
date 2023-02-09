@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{923067D7-8629-4987-A99E-F30F10AA297E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RMQ</RootNamespace>
+    <AssemblyName>RMQ</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Files\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Files\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Label="TemplateBuilder">
+    <TemplateBuilderTargets Condition=" '$(TemplateBuilderTargets)'=='' ">$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\..\packages\TemplateBuilder.1.1.6.1\tools\ligershark.templates.targets ))</TemplateBuilderTargets>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Automatonymous, Version=5.0.1.0, Culture=neutral, PublicKeyToken=b800c4cfcdeea87b, processorArchitecture=MSIL">
+      <HintPath>packages\Automatonymous.5.0.1\lib\netstandard2.0\Automatonymous.dll</HintPath>
+    </Reference>
+    <Reference Include="GreenPipes, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b800c4cfcdeea87b, processorArchitecture=MSIL">
+      <HintPath>packages\GreenPipes.4.0.0\lib\netstandard2.0\GreenPipes.dll</HintPath>
+    </Reference>
+    <Reference Include="MassTransit, Version=7.0.3.0, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa, processorArchitecture=MSIL">
+      <HintPath>packages\MassTransit.7.0.3\lib\netstandard2.0\MassTransit.dll</HintPath>
+    </Reference>
+    <Reference Include="MassTransit.RabbitMqTransport, Version=7.0.3.0, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa, processorArchitecture=MSIL">
+      <HintPath>packages\MassTransit.RabbitMQ.7.0.3\lib\netstandard2.0\MassTransit.RabbitMqTransport.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.1.1.1\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=3.1.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.Abstractions.3.1.5\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="NewId, Version=3.0.2.0, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa, processorArchitecture=MSIL">
+      <HintPath>packages\NewId.3.0.2\lib\net452\NewId.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Bson, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.Bson.1.0.1\lib\net45\Newtonsoft.Json.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>packages\NLog.5.1.1\lib\net46\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz, Version=3.2.2.0, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="RabbitMQ.Client, Version=6.0.0.0, Culture=neutral, PublicKeyToken=89e7d7c5feba84ce, processorArchitecture=MSIL">
+      <HintPath>packages\RabbitMQ.Client.6.1.0\lib\net461\RabbitMQ.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.DiagnosticSource.4.7.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Threading.Channels, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Channels.4.7.1\lib\net461\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool, Version=4.0.11.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.ThreadPool.4.3.0\lib\net46\System.Threading.ThreadPool.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Xml.ReaderWriter.4.3.1\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Terrasoft.Common, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.Core, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.Core.ConfigurationBuild, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Core.ConfigurationBuild.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.Core.DI, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=MSIL">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Core.DI.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.Core.Packages, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Core.Packages.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.Core.Process, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Core.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.Core.Scheduler, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Core.Scheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.Core.ScriptEngine, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Core.ScriptEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.Core.ServiceModelContract, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Core.ServiceModelContract.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.Core.Translation, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Core.Translation.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.File, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.File.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.File.Abstractions, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.File.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.GlobalSearch, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.GlobalSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.GoogleServerConnector, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.GoogleServerConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.GoogleServices, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.GoogleServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.IO, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=MSIL">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.Messaging.Common, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Messaging.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.Messaging.Common.Standard, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=MSIL">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Messaging.Common.Standard.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.Mobile, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.Monitoring, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Monitoring.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.Nui, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Nui.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.Nui.ServiceModel, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Nui.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.Reports, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Reports.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.Services, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.Social, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Social.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.Sync, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Sync.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.Web.Common, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Web.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Terrasoft.Web.Http.Abstractions, Version=7.18.5.1500, Culture=neutral, PublicKeyToken=edaadfbc3b0bb879, processorArchitecture=x86">
+      <HintPath>packages\CreatioSDK.7.18.5.1500\lib\net40\Terrasoft.Web.Http.Abstractions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="Files\cs\Consumers\ContactConsumer.cs" />
+    <Compile Include="Files\cs\Contracts\ContactContract.cs" />
+    <Compile Include="Files\cs\EventListeners\ContactEventListener.cs" />
+    <Compile Include="Files\cs\Extensions\MassTransitExtension.cs" />
+    <Compile Include="Files\cs\Producers\ContactProducer.cs" />
+    <Compile Include="Files\cs\Startup.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <!-- ##BpmonlineSDKMarker## -->
+  <ItemGroup>
+    <Content Include="Assemblies\placeholder.txt" />
+    <Content Include="Data\placeholder.txt" />
+    <Content Include="Resources\placeholder.txt" />
+    <Content Include="Schemas\placeholder.txt" />
+    <Content Include="SqlScripts\placeholder.txt" />
+  </ItemGroup>
+  <!-- ##BpmonlineSDKMarker## -->
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="descriptor.json" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="RMQ.Api\RMQ.Api.csproj">
+      <Project>{643EB744-16BA-4CE7-85BB-32E882B9D5A9}</Project>
+      <Name>RMQ.Api</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(TemplateBuilderTargets)" Condition="Exists('$(TemplateBuilderTargets)')" Label="TemplateBuilder" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

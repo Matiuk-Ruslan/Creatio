@@ -1,0 +1,10 @@
+{
+  "Descriptor": {
+    "UId": "923067d7-8629-4987-a99e-f30f10aa297e",
+    "PackageVersion": "7.8.0",
+    "Name": "RMQ",
+    "ModifiedOnUtc": "/Date(1675941591000)/",
+    "Maintainer": "Maib",
+    "DependsOn": []
+  }
+}
